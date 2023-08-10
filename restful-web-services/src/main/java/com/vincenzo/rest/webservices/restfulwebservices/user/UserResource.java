@@ -44,6 +44,10 @@ public class UserResource {
 
     @DeleteMapping("/users/{id}")
     public void deleteUser(@PathVariable("id") int id) {
-        service.deleteById(id);
+        Boolean deletedElement = service.deleteById(id);
+
+        if (!deletedElement) {
+            throw new UserNotFoundException("id: " + id);
+        }
     }
 }
