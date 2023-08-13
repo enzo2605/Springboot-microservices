@@ -1,12 +1,18 @@
 package com.vincenzo.rest.webservices.restfulwebservices.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.vincenzo.rest.webservices.restfulwebservices.versoning.Name;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
-
+@Entity(name = "user_details")
 public class User {
+    @Id
+    @GeneratedValue
     private Integer id;
     @Size(min = 2, message = "Name should have at least two characters")
     @JsonProperty("user_name")
