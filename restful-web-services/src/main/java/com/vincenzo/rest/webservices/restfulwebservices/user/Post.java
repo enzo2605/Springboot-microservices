@@ -1,5 +1,6 @@
 package com.vincenzo.rest.webservices.restfulwebservices.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
@@ -8,7 +9,8 @@ public class Post {
     @GeneratedValue
     private int id;
     private String description;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
     private User user;
 
     public Post() {}
