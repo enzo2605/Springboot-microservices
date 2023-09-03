@@ -1,4 +1,4 @@
-package com.vincenzo.microservices.currentexchangeservice;
+package com.vincenzo.microservices.currentexchangeservice.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
