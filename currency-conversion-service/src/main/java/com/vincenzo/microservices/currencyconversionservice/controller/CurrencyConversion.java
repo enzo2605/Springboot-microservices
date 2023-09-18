@@ -7,6 +7,7 @@ public class CurrencyConversion {
     private String from;
     private String to;
     private BigDecimal conversionMultiple;
+    // Value to be converted
     private BigDecimal quantity;
     private BigDecimal totalCalculatedAmount;
     // Add this field to track information about the instance of CurrencenyExchange microservice
