@@ -1,10 +1,10 @@
-package com.vincenzo.microservices.apigateway;
+package com.vincenzo.microservices.currencyconversionservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiGatewayApplicationTests {
+class ApiGatewayApplicationTest {
 
 	@Test
 	void contextLoads() {
