@@ -1,11 +1,10 @@
 package com.vincenzo.springbot.learnjpaandhibernate.course;
 
-import com.vincenzo.springbot.learnjpaandhibernate.course.jdbc.CourseJdbcRepository;
-import com.vincenzo.springbot.learnjpaandhibernate.course.jpa.CourseJpaRepository;
-import com.vincenzo.springbot.learnjpaandhibernate.course.springdatajpa.CourseSpringDataJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import com.vincenzo.springbot.learnjpaandhibernate.course.springdatajpa.CourseSpringDataJpaRepository;
 
 @Component
 public class CourseCommandLineRunner implements CommandLineRunner {

@@ -1,14 +1,13 @@
 package com.vincenzo.microservices.currentexchangeservice.controller;
 
-import com.vincenzo.microservices.currentexchangeservice.entity.CurrencyExchange;
-import com.vincenzo.microservices.currentexchangeservice.repository.CurrencyExchangeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.math.BigDecimal;
+import com.vincenzo.microservices.currentexchangeservice.entity.CurrencyExchange;
+import com.vincenzo.microservices.currentexchangeservice.repository.CurrencyExchangeRepository;
 
 @RestController
 public class CurrencyExchangeController {
